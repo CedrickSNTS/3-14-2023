@@ -6,20 +6,23 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>857</width>
-    <height>719</height>
+    <width>670</width>
+    <height>438</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(252, 255, 221);</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>420</y>
-     <width>551</width>
-     <height>51</height>
+     <x>-60</x>
+     <y>60</y>
+     <width>851</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="font">
@@ -27,15 +30,18 @@
      <pointsize>28</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
    <property name="text">
-    <string>ANNE KRISHANE CALISAY</string>
+    <string>              ANNE KRISHANE CALISAY</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>650</y>
+     <x>280</x>
+     <y>360</y>
      <width>211</width>
      <height>51</height>
     </rect>
@@ -45,6 +51,10 @@
      <pointsize>14</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 170, 255);
+color: black;</string>
+   </property>
    <property name="text">
     <string>Other Information</string>
    </property>
@@ -52,17 +62,17 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>-60</y>
-     <width>381</width>
-     <height>451</height>
+     <x>410</x>
+     <y>0</y>
+     <width>321</width>
+     <height>471</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>:/pics/PICTURES FOR GROUPWORK/325371136_542851281129175_8345838986307427715_n-removebg-preview.png</pixmap>
+    <pixmap resource="src.qrc">:/pics/PICTURES FOR GROUPWORK/325371136_542851281129175_8345838986307427715_n-removebg-preview.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -74,18 +84,18 @@
   <widget class="QTextEdit" name="textEditCalisay">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>490</y>
-     <width>541</width>
-     <height>131</height>
+     <x>40</x>
+     <y>160</y>
+     <width>411</width>
+     <height>171</height>
     </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="pB_ViewDesc">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>650</y>
+     <x>20</x>
+     <y>360</y>
      <width>211</width>
      <height>51</height>
     </rect>
@@ -95,11 +105,41 @@
      <pointsize>14</pointsize>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 170, 255);
+color: black;</string>
+   </property>
    <property name="text">
     <string>View Description</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 170, 255);
+color: black;</string>
+   </property>
+   <property name="text">
+    <string>BACK</string>
+   </property>
+  </widget>
+  <zorder>label_3</zorder>
+  <zorder>label</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>textEditCalisay</zorder>
+  <zorder>pB_ViewDesc</zorder>
+  <zorder>pushButton_2</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="src.qrc"/>
+  <include location="src.qrc"/>
+ </resources>
  <connections/>
 </ui>
